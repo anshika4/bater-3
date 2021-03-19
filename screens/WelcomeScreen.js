@@ -52,7 +52,7 @@ export default class WelcomeScreen extends Component{
 
 login=(emailId, password)=>{
 firebase.auth().signInWithEmailAndPassword(emailId, password).then((response)=>{
-  this.props.navigation.navigate("HomeScreen")
+  this.props.navigation.navigate("home")
 })
 .catch((error)=> {
 var errorCode = error.code;
