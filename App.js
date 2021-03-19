@@ -1,11 +1,11 @@
 
 import React from 'react';
 import {Image} from 'react-native';
-import {createBottomTabNavigator} from 'react-navigation-tabs';
+import {createAppContainer,createSwitchNavigator} from 'react-navigation';
 import ExchangeScreen from './screens/exchange';
 import HomeScreen from './screens/home';
 import WelcomeScreen from './screens/WelcomeScreen'
-import {createAppContainer,createSwitchNavigator} from 'react-navigation'; 
+import {createBottomTabNavigator} from 'react-navigation-tabs';
 export default class App extends React.Component {
 render(){
 return (
