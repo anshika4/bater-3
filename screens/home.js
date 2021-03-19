@@ -13,10 +13,11 @@ this.requestRef=null
 }
 
 allRequests = () =>{
-this.requestRef = db.collection("requests")
-
-.onSnapshot((snapshot)=>{
-  var requestedList = snapshot.docs.map(document => document.data());
+  this.requestRef = db.collection("exchange") .onSnapshot((snapshot)=>{ 
+    var allRequests = [] 
+    snapshot.forEach((doc) => { 
+      allRequests.push(doc.data())
+     })
   
   this.setState({
     allRequests : requestedList
@@ -52,7 +53,7 @@ return(
 <View style={{justifyContent: 'center',alignItems: 'center',flex:1}}>
 <Text style={styles.title}>  List Of Items </Text>
 {
-this.state.requests.length === 0
+this.state.allRequests.length === 0
 ?(
 <Text style={{ fontSize: 20}}>List Of All Requested Items.</Text>
 )
