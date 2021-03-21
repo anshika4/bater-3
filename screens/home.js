@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, TextInput, TouchableOpacity, Alert, StyleSheet,Image,Modal,ScrollView,KeyboardAvoidingView,FlatList} from 'react-native';
 import  db from '../config';
 import firebase from 'firebase';
+import {ListItem} from 'react-native-elements';
 
 export default class HomeScreen extends Component{
 constructor(){
@@ -20,7 +21,7 @@ allRequests = () =>{
      })
   
   this.setState({
-    allRequests : requestedList
+    allRequests : allRequests
   });
 
 })
