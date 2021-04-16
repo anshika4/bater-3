@@ -35,8 +35,8 @@ renderItem=({item,i})=>{
 return(
 <ListItem
 key={i}
-title={item.item}
-subtitle={item.discription}
+title={item.item_name} 
+  subtitle={item.description}
 titleStyle={{color:'black',fontWeight:'bold'}}
 rightElement={
 <TouchableOpacity style={styles.button}>
