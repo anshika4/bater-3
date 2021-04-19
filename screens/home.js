@@ -40,7 +40,7 @@ title={item.item_name}
 titleStyle={{color:'black',fontWeight:'bold'}}
 rightElement={
 <TouchableOpacity style={styles.button}>
-<Text style={styles.buttonText}>Excahnge</Text>
+<Text style={styles.buttonText}>exchange</Text>
 </TouchableOpacity>
 }
 />
@@ -153,7 +153,7 @@ borderRadius:10,
 marginTop:30
 },
 button:{
-width:200,
+width:100,
 height:40,
 alignItems:'center',
 justifyContent:'center',
